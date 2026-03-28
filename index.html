@@ -3,7 +3,7 @@
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>GoGlobal Travel Solutions Private Limited Private Limited | Premium International Travel Services</title>
+<title>GoGlobal Travel Solutions Private Limited | Premium International Travel Services</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -98,17 +98,15 @@
             </div>
 <!-- Desktop Links -->
 <div class="hidden md:flex items-center space-x-8 font-plus-jakarta text-sm font-medium tracking-tight">
-<a class="text-teal-700 border-b-2 border-teal-700 pb-1" href="index.html">Home</a>
-<a class="text-slate-600 hover:text-teal-600 transition-colors" href="services.html">Services</a>
-<a class="text-slate-600 hover:text-teal-600 transition-colors" href="services.html">Packages</a>
-<a class="text-slate-600 hover:text-teal-600 transition-colors" href="contact.html">Contact Us</a>
-<a class="text-slate-600 hover:text-teal-600 transition-colors" href="faq.html">FAQ</a>
+<a class="text-teal-700 dark:text-teal-300 border-b-2 border-teal-700 pb-1 font-plus-jakarta text-sm font-medium tracking-tight" href="index.html">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="services.html">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="packages.html">Packages</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="contact.html">Contact Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="faq.html">FAQ</a>
 </div>
 <div class="flex items-center space-x-4">
-<button class="hidden lg:block text-slate-600 text-sm font-medium px-4 py-2 hover:bg-teal-50 rounded-lg transition-all" onclick="window.location.href='contact.html'">Login</button>
-<button class="cta-gradient text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md scale-95 active:scale-90 transition-transform" onclick="window.location.href='contact.html'">
-                    Get Free Quote
-                </button>
+<button class="hidden lg:block text-slate-600 text-sm font-medium px-4 py-2 hover:bg-teal-50 rounded-lg transition-all">Login</button>
+<a href="contact.html" class="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-container text-white text-sm font-semibold rounded-lg shadow-lg scale-95 active:scale-90 transition-transform inline-block text-center">Get Free Quote</a>
 </div>
 </div>
 </nav>
@@ -127,10 +125,8 @@
                     Visa, Forex, Insurance &amp; Travel Packages – All in One Place. Experience the world with India's most trusted travel concierge.
                 </p>
 <div class="flex flex-wrap gap-4">
-<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all scale-100 active:scale-95" onclick="window.location.href='contact.html'">
-                        Get Free Quote
-                    </button>
-<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-white/20 transition-all" onclick="window.location.href='https://wa.me/919311354795'">
+<a href="contact.html" class="px-5 py-2.5 bg-gradient-to-br from-primary to-primary-container text-white text-sm font-semibold rounded-lg shadow-lg scale-95 active:scale-90 transition-transform inline-block text-center">Get Free Quote</a>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-white/20 transition-all">
 <span class="material-symbols-outlined">chat</span>
                         Chat on WhatsApp
                     </button>
@@ -140,22 +136,21 @@
 <div class="md:col-span-5">
 <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-2xl border border-outline-variant/15">
 <h3 class="font-headline text-2xl font-bold mb-6 text-on-surface">Start Your Journey</h3>
-<form action="thank-you.html" class="space-y-4" method="get">
+<form id="leadForm"  class="space-y-4"><input type="hidden" name="source_page" value="home-page">
 <div class="grid grid-cols-2 gap-4">
-<input class="col-span-2 w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Full Name" type="text"/>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Mobile Number" type="tel"/>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Email" type="email"/>
+<input class="col-span-2 w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" name="full_name" placeholder="Full Name" type="text"/>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" name="mobile" placeholder="Mobile Number" type="tel"/>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" name="email" placeholder="Email" type="email"/>
 </div>
-<select class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50 text-on-surface-variant">
-<option>Service Required</option>
+<select name="service" class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50 text-on-surface-variant"><option>Service Required</option>
 <option>Visa Services</option>
 <option>Travel Packages</option>
 <option>Forex Exchange</option>
 <option>Insurance</option>
 </select>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Destination Country" type="text"/>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" name="destination" placeholder="Destination Country" type="text"/>
 <div class="grid grid-cols-2 gap-4">
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50 text-on-surface-variant" type="date"/>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50 text-on-surface-variant" name="travel_date" type="date"/>
 <select class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50 text-on-surface-variant">
 <option>Budget Range</option>
 <option>Economy</option>
@@ -164,7 +159,7 @@
 </select>
 </div>
 <textarea class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Your Message" rows="2"></textarea>
-<button class="w-full cta-gradient text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary-container/20 transition-all" type="submit">
+<button class="w-full cta-gradient text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary-container/20 transition-all">
                             Get Callback in 10 Minutes
                         </button>
 </form>
@@ -187,7 +182,7 @@
 </div>
 <h4 class="font-headline text-xl font-bold mb-3">Travel Packages</h4>
 <p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Curated luxury and budget-friendly international itineraries designed for unforgettable memories.</p>
-<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="services.html">
+<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="packages.html">
                         Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
 </a>
 </div>
@@ -198,7 +193,7 @@
 </div>
 <h4 class="font-headline text-xl font-bold mb-3">Visa Services</h4>
 <p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Expert documentation assistance and fast-track processing for 150+ countries worldwide.</p>
-<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="services.html">
+<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="packages.html">
                         Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
 </a>
 </div>
@@ -209,7 +204,7 @@
 </div>
 <h4 class="font-headline text-xl font-bold mb-3">Forex Exchange</h4>
 <p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Best competitive rates for multi-currency cards and cash with doorstep delivery options.</p>
-<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="services.html">
+<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="packages.html">
                         Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
 </a>
 </div>
@@ -220,7 +215,7 @@
 </div>
 <h4 class="font-headline text-xl font-bold mb-3">Travel Insurance</h4>
 <p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Comprehensive medical and baggage protection to keep you secure on your global adventures.</p>
-<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="services.html">
+<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="packages.html">
                         Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
 </a>
 </div>
@@ -433,10 +428,10 @@
 <div>
 <h5 class="font-bold text-teal-800 dark:text-teal-500 mb-6 uppercase tracking-wider text-xs">Quick Links</h5>
 <ul class="space-y-4 text-slate-500">
-<li><a class="hover:text-teal-600 transition-colors" href="index.html">Destinations</a></li>
-<li><a class="hover:text-teal-600 transition-colors" href="services.html">Visa Services</a></li>
-<li><a class="hover:text-teal-600 transition-colors" href="services.html">Corporate Travel</a></li>
-<li><a class="hover:text-teal-600 transition-colors" href="faq.html">Privacy Policy</a></li>
+<li><a class="hover:text-teal-600 transition-colors" href="packages.html">Destinations</a></li>
+<li><a class="hover:text-teal-600 transition-colors" href="packages.html">Visa Services</a></li>
+<li><a class="hover:text-teal-600 transition-colors" href="packages.html">Corporate Travel</a></li>
+<li><a class="hover:text-teal-600 transition-colors" href="packages.html">Privacy Policy</a></li>
 </ul>
 </div>
 <div>
@@ -470,26 +465,39 @@
         </div>
 </footer>
 <!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-90 transition-transform z-50" href="https://wa.me/919311354795">
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-90 transition-transform z-50" href="packages.html">
 <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
 </a>
 <!-- Mobile Navigation Shell (Bottom Bar) -->
 <div class="md:hidden fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-md border-t border-slate-100 flex justify-around items-center py-3 px-2 z-40">
-<a class="flex flex-col items-center gap-1 text-teal-700" href="#">
+<a class="flex flex-col items-center gap-1 text-teal-700" href="packages.html">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
 <span class="text-[10px] font-bold">Home</span>
 </a>
-<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="packages.html">
 <span class="material-symbols-outlined">map</span>
 <span class="text-[10px]">Destinations</span>
 </a>
-<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="packages.html">
 <span class="material-symbols-outlined">chat</span>
 <span class="text-[10px]">Support</span>
 </a>
-<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<a class="flex flex-col items-center gap-1 text-slate-500" href="packages.html">
 <span class="material-symbols-outlined">description</span>
 <span class="text-[10px]">Status</span>
 </a>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('leadForm');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      window.location.href = 'thank-you.html';
+    });
+  }
+});
+</script>
+
 </body></html>
