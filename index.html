@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GoGlobal Travel Solutions Private Limited | Premium International Travel Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#d8dadc",
+              "tertiary-fixed-dim": "#ffb59b",
+              "on-surface": "#191c1e",
+              "surface-bright": "#f7f9fb",
+              "background": "#f7f9fb",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e0e3e5",
+              "primary": "#004a58",
+              "on-secondary-container": "#fefcff",
+              "tertiary-fixed": "#ffdbcf",
+              "primary-fixed-dim": "#5dd6f3",
+              "secondary": "#0453cd",
+              "on-secondary-fixed": "#001848",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed-variant": "#812800",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f2f4f6",
+              "on-primary-container": "#6fe2ff",
+              "on-primary-fixed-variant": "#004e5d",
+              "on-background": "#191c1e",
+              "surface-variant": "#e0e3e5",
+              "error-container": "#ffdad6",
+              "outline": "#737685",
+              "on-primary-fixed": "#001f26",
+              "surface-tint": "#00687a",
+              "outline-variant": "#c3c6d6",
+              "surface-container-high": "#e6e8ea",
+              "inverse-surface": "#2d3133",
+              "primary-fixed": "#adecff",
+              "on-primary": "#ffffff",
+              "secondary-fixed-dim": "#b2c5ff",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#dae2ff",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#380d00",
+              "surface-container": "#eceef0",
+              "on-secondary-fixed-variant": "#0040a2",
+              "tertiary": "#7b2600",
+              "on-tertiary-container": "#ffc6b2",
+              "tertiary-container": "#a33500",
+              "secondary-container": "#356ee7",
+              "on-surface-variant": "#434654",
+              "primary-container": "#006476",
+              "inverse-on-surface": "#eff1f3",
+              "inverse-primary": "#5dd6f3",
+              "surface": "#f7f9fb"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-nav {
+            background: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(0, 74, 88, 0.9) 0%, rgba(0, 100, 118, 0.7) 100%);
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #004a58 0%, #006476 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body leading-relaxed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold text-teal-950 dark:text-white tracking-tighter font-headline">
+                GoGlobal Travel Solutions Private Limited
+            </div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center space-x-8 font-plus-jakarta text-sm font-medium tracking-tight">
+<a class="text-teal-700 border-b-2 border-teal-700 pb-1" href="#">Destinations</a>
+<a class="text-slate-600 hover:text-teal-600 transition-colors" href="#">Services</a>
+<a class="text-slate-600 hover:text-teal-600 transition-colors" href="#">Packages</a>
+<a class="text-slate-600 hover:text-teal-600 transition-colors" href="#">About Us</a>
+<a class="text-slate-600 hover:text-teal-600 transition-colors" href="#">Reviews</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="hidden lg:block text-slate-600 text-sm font-medium px-4 py-2 hover:bg-teal-50 rounded-lg transition-all">Login</button>
+<button class="cta-gradient text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-md scale-95 active:scale-90 transition-transform">
+                    Get Free Quote
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Cinematic wide shot of Dubai skyline at sunset with golden light reflecting on skyscrapers and Burj Khalifa in distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQwx9UvhIURZyGgHUaWDPjwgQ7QTnfCTAdSh8hdQk7RvDqHs39Cq2B0-qx1O6W6k2O9tB-7Ol27g2lBoNmEirsuelgImyZwm0yupGSTu7PXqOCo6rft6H_DUpsPEivA5iL1TDhNBo7xVvZv2gB9wIr0GmSyUrNa3wnb4p4gpt8EJmBRdubL3XrHmiM3Nw5PdCfLTONmPROkx_JZR3uNUyMljRBTB_Jmp-ARCk9muXq95hpTpyJbfqzjyCm67Wowlv5pWmX5bRhdNUv"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 text-white">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
+                    Plan Your International Travel <span class="text-primary-fixed">Hassle-Free</span>
+</h1>
+<p class="text-xl text-primary-fixed/90 mb-10 max-w-xl font-light">
+                    Visa, Forex, Insurance &amp; Travel Packages – All in One Place. Experience the world with India's most trusted travel concierge.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all scale-100 active:scale-95">
+                        Get Free Quote
+                    </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-white/20 transition-all">
+<span class="material-symbols-outlined">chat</span>
+                        Chat on WhatsApp
+                    </button>
+</div>
+</div>
+<!-- Lead Form Above Fold -->
+<div class="md:col-span-5">
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-2xl border border-outline-variant/15">
+<h3 class="font-headline text-2xl font-bold mb-6 text-on-surface">Start Your Journey</h3>
+<form class="space-y-4">
+<div class="grid grid-cols-2 gap-4">
+<input class="col-span-2 w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Full Name" type="text"/>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Mobile Number" type="tel"/>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Email" type="email"/>
+</div>
+<select class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50 text-on-surface-variant">
+<option>Service Required</option>
+<option>Visa Services</option>
+<option>Travel Packages</option>
+<option>Forex Exchange</option>
+<option>Insurance</option>
+</select>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Destination Country" type="text"/>
+<div class="grid grid-cols-2 gap-4">
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50 text-on-surface-variant" type="date"/>
+<select class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50 text-on-surface-variant">
+<option>Budget Range</option>
+<option>Economy</option>
+<option>Premium</option>
+<option>Luxury</option>
+</select>
+</div>
+<textarea class="w-full bg-surface-container-highest border-none rounded-lg p-3 text-sm focus:ring-2 focus:ring-secondary/50" placeholder="Your Message" rows="2"></textarea>
+<button class="w-full cta-gradient text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-primary-container/20 transition-all">
+                            Get Callback in 10 Minutes
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-extrabold text-on-surface mb-4">Our Comprehensive Services</h2>
+<p class="text-on-surface-variant max-w-2xl text-lg">From meticulous visa processing to curated holiday experiences, we handle the complexity so you can enjoy the journey.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Travel Packages -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="w-14 h-14 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">map</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Travel Packages</h4>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Curated luxury and budget-friendly international itineraries designed for unforgettable memories.</p>
+<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Visa Services -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="w-14 h-14 bg-secondary-fixed rounded-xl flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Visa Services</h4>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Expert documentation assistance and fast-track processing for 150+ countries worldwide.</p>
+<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Forex Exchange -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="w-14 h-14 bg-tertiary-fixed rounded-xl flex items-center justify-center text-tertiary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">currency_exchange</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Forex Exchange</h4>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Best competitive rates for multi-currency cards and cash with doorstep delivery options.</p>
+<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Travel Insurance -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group flex flex-col h-full">
+<div class="w-14 h-14 bg-primary-fixed-dim rounded-xl flex items-center justify-center text-primary-container mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">health_and_safety</span>
+</div>
+<h4 class="font-headline text-xl font-bold mb-3">Travel Insurance</h4>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow leading-relaxed">Comprehensive medical and baggage protection to keep you secure on your global adventures.</p>
+<a class="text-secondary font-bold text-sm flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-[500px] object-cover" data-alt="Modern high-end airport terminal with sleek architectural lines and travelers walking toward large windows with airplanes visible" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGEcsKo12tuC3cGBNPV2alxa6t1bq8gApNnuSbNpF_7IRLLgChK0yOPsjkg1gkbxNDzxxMLOyQbXsrKsdbtuU9Jy6DIX0sGt3i5itGtBIkrXU_WTCUSvW_DkziNK3LviLzthpBfQ7mkv8cakhoHv-60X1aiUBh_AlaMnM3uD7ldbL5qVnyCX602z1SNBrbPXoLhWiax-E9gIY9zYPbtjVJrsgt5GvK97AFPzAQ7UxRvcRiq-3LvcX1xQlVqIelT1315Geqm6vdvy4N"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl shadow-xl max-w-xs hidden lg:block">
+<p class="text-teal-900 font-bold text-lg mb-2">15,000+</p>
+<p class="text-slate-500 text-sm">Happy travelers served annually across India.</p>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-4xl font-extrabold mb-12">The GoGlobal Advantage</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-teal-700">speed</span>
+</div>
+<div>
+<h5 class="font-bold text-lg mb-1">Fast Processing</h5>
+<p class="text-on-surface-variant">Industry-leading turnaround times for visa and documentation approvals.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-teal-700">payments</span>
+</div>
+<div>
+<h5 class="font-bold text-lg mb-1">Best Rates Guaranteed</h5>
+<p class="text-on-surface-variant">Transparent pricing with zero hidden costs and the most competitive Forex rates.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-teal-700">support_agent</span>
+</div>
+<div>
+<h5 class="font-bold text-lg mb-1">Trusted Advisors</h5>
+<p class="text-on-surface-variant">Personalized concierge service from travel experts with 20+ years of experience.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center">
+<span class="material-symbols-outlined text-teal-700">home_work</span>
+</div>
+<div>
+<h5 class="font-bold text-lg mb-1">Doorstep Service</h5>
+<p class="text-on-surface-variant">We bring our services to you, from document pickup to Forex delivery.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Flow -->
+<section class="py-24 bg-primary text-white overflow-hidden relative">
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-extrabold mb-4">How It Works</h2>
+<p class="text-primary-fixed/80">Three simple steps to your dream destination</p>
+</div>
+<div class="grid md:grid-cols-3 gap-12 relative">
+<!-- Connect Line -->
+<div class="hidden md:block absolute top-12 left-1/4 right-1/4 h-px bg-white/20 z-0"></div>
+<div class="text-center relative z-10">
+<div class="w-24 h-24 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mx-auto mb-6 text-3xl font-bold">1</div>
+<h4 class="text-xl font-bold mb-3">Submit Request</h4>
+<p class="text-primary-fixed/70 text-sm">Fill our simple lead form or call our experts to share your travel requirements.</p>
+</div>
+<div class="text-center relative z-10">
+<div class="w-24 h-24 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mx-auto mb-6 text-3xl font-bold">2</div>
+<h4 class="text-xl font-bold mb-3">Expert Consultation</h4>
+<p class="text-primary-fixed/70 text-sm">Receive a personalized plan and transparent quote tailored to your needs.</p>
+</div>
+<div class="text-center relative z-10">
+<div class="w-24 h-24 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mx-auto mb-6 text-3xl font-bold">3</div>
+<h4 class="text-xl font-bold mb-3">Booking &amp; Delivery</h4>
+<p class="text-primary-fixed/70 text-sm">Relax as we handle everything from bookings to doorstep delivery of travel docs.</p>
+</div>
+</div>
+</div>
+<!-- Decorative abstract shape -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-primary-container rounded-full blur-[120px] opacity-20"></div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="font-headline text-4xl font-extrabold text-center mb-16">What Our Travelers Say</h2>
+<div class="flex overflow-x-auto gap-8 pb-12 no-scrollbar snap-x">
+<!-- Testimonial 1 -->
+<div class="flex-shrink-0 w-full md:w-[400px] bg-surface-container-lowest p-8 rounded-2xl shadow-sm snap-center">
+<div class="flex gap-1 text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 italic">"GoGlobal made our Europe trip completely stress-free. From visa documentation to local transfers, everything was perfectly managed. Highly recommended!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling Indian man in his late 30s wearing a crisp white linen shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk3gUDN9Vff2QczN-jGWO_YnxyhmNYiMq_wHPd5adEgbYqB7dHXsnCFaSVzglw4_s6jnbldKR8fyYmxocvSHZWpZvv2l7NGkzeqlKN5OPTvW9luoqKijRv51kK5fI0BTgaOVTEdHv7aW_l0wBHPwcM1AE44UZ9iHYmzURHBxKyTZJkx5ceofqSrTmlMydhNDyV3dDHWiyXifHvMO2-G7OkRByXCySshu7qTEdNr1OKXPOXDiAVPVBoEu__DEsgDszltaGjL7XeLvuw"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Amit Sharma</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Business Owner, Delhi</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="flex-shrink-0 w-full md:w-[400px] bg-surface-container-lowest p-8 rounded-2xl shadow-sm snap-center">
+<div class="flex gap-1 text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 italic">"Best forex rates I could find in Delhi. They even delivered the currency and my multi-currency card right to my office. Super convenient."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a young Indian woman smiling warmly, wearing elegant gold earrings and a professional blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx4I2l2SXqWBWbuJgsDyyPeCr9BPy1wp6pNWPKPCnuC2mJ1AGaHTPYAzajdsLtyH4qhgZ_wLJ86dpsq01LYAFGK6eMcJwvIFN-OIeCnUVkfwNvrbSgnSdHeD1xVNfjtXI3S5XLf5Kj5e9bsPtSa1i_liFPmhyfj59xyxaQCaR9LjO4PmjTxqwQePGSsviAWJo0JUDaOZMnvqv0BaW3qPD8ma5n-cgMtscia_VZhe8LgE0jadA-T26Ov3LxzVzx7eWR1ZvipQ9Bh6W1"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Priya Iyer</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Software Engineer, Bangalore</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="flex-shrink-0 w-full md:w-[400px] bg-surface-container-lowest p-8 rounded-2xl shadow-sm snap-center">
+<div class="flex gap-1 text-tertiary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface-variant italic mb-8 italic">"Their visa consultation for Japan was spot on. Very professional and answered all my complex queries with patience. Got my visa in 5 days!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-dim overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a cheerful middle-aged Indian man with a salt-and-pepper beard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeW_KAGOQKvqWtNi4buzbYywW6c6-5fYln2bxcMVMUEA9NjKqE_6xG7oIleR54ZMk9WTR_P6a7t0dzchX_erPo6XRlD6_M4pZ_uvOOLp_PtqrOssS6uFLUk87_vNtghm4Hsz6vEkHNCO2ZVmhRSW1UI6BOQxJ-e4LzfVUsXxVw0kC1zBIj-bxoU5S2PoAdr9MYLAyh_6gs56RFXA0QyJX17Ltz3GwLUM2BLGu0DDuLDZLil2EyG31MEMkuly6SRc8ouNlYydomFkG6"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Rohan Malhotra</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Architect, Mumbai</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Accordion -->
+<section class="py-24 bg-surface">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="font-headline text-4xl font-extrabold text-center mb-16">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="group border-b border-outline-variant/30 pb-4">
+<button class="flex justify-between items-center w-full py-4 text-left font-bold text-lg hover:text-primary transition-colors">
+<span>How early should I apply for a tourist visa?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300">
+<p class="text-on-surface-variant text-sm pb-4">We recommend applying at least 4-6 weeks before your intended travel date to account for any unforeseen documentation requirements or processing delays.</p>
+</div>
+</div>
+<div class="group border-b border-outline-variant/30 pb-4">
+<button class="flex justify-between items-center w-full py-4 text-left font-bold text-lg hover:text-primary transition-colors">
+<span>Do you provide doorstep forex delivery in all cities?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300">
+<p class="text-on-surface-variant text-sm pb-4">Currently, doorstep delivery for Forex and insurance documents is available in Delhi NCR, Mumbai, Bangalore, and Pune. We ship via premium couriers to other cities.</p>
+</div>
+</div>
+<div class="group border-b border-outline-variant/30 pb-4">
+<button class="flex justify-between items-center w-full py-4 text-left font-bold text-lg hover:text-primary transition-colors">
+<span>Are your holiday packages customizable?</span>
+<span class="material-symbols-outlined text-primary group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="overflow-hidden max-h-0 group-hover:max-h-40 transition-all duration-300">
+<p class="text-on-surface-variant text-sm pb-4">Yes! Every itinerary we offer can be fully customized based on your budget, hotel preferences, and specific interests. Just talk to our concierge.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="py-12 px-8 grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto font-inter text-sm leading-relaxed">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-bold text-teal-950 dark:text-teal-100 mb-6 font-headline">GoGlobal Travel Solutions Private Limited</div>
+<p class="text-slate-500 mb-6">Redefining international travel for the modern Indian globetrotter.</p>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-teal-800 hover:bg-primary hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">social_leaderboard</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-teal-800 hover:bg-primary hover:text-white transition-all cursor-pointer">
+<span class="material-symbols-outlined text-sm">public</span>
+</div>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-teal-800 dark:text-teal-500 mb-6 uppercase tracking-wider text-xs">Quick Links</h5>
+<ul class="space-y-4 text-slate-500">
+<li><a class="hover:text-teal-600 transition-colors" href="#">Destinations</a></li>
+<li><a class="hover:text-teal-600 transition-colors" href="#">Visa Services</a></li>
+<li><a class="hover:text-teal-600 transition-colors" href="#">Corporate Travel</a></li>
+<li><a class="hover:text-teal-600 transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-teal-800 dark:text-teal-500 mb-6 uppercase tracking-wider text-xs">Contact Delhi</h5>
+<ul class="space-y-4 text-slate-500">
+<li class="flex gap-2">
+<span class="material-symbols-outlined text-teal-700 text-sm">location_on</span>
+                        Connaught Place, New Delhi - 110001
+                    </li>
+<li class="flex gap-2">
+<span class="material-symbols-outlined text-teal-700 text-sm">call</span>
+                        +91 9311354795 8900
+                    </li>
+<li class="flex gap-2">
+<span class="material-symbols-outlined text-teal-700 text-sm">mail</span>
+                        info@goglobal.forex
+                    </li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-teal-800 dark:text-teal-500 mb-6 uppercase tracking-wider text-xs">Newsletter</h5>
+<p class="text-slate-500 mb-4">Subscribe for travel alerts and forex rate updates.</p>
+<div class="flex">
+<input class="bg-white border border-outline-variant/30 rounded-l-lg px-4 py-2 w-full focus:ring-0 focus:border-primary" placeholder="Your email" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-r-lg hover:bg-primary-container transition-all">Join</button>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 py-6 text-center text-slate-400 text-xs">
+            © 2024 GoGlobal Travel Solutions Private Limited. Delhi NCR Office. All rights reserved.
+        </div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-90 transition-transform z-50" href="#">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+</a>
+<!-- Mobile Navigation Shell (Bottom Bar) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-md border-t border-slate-100 flex justify-around items-center py-3 px-2 z-40">
+<a class="flex flex-col items-center gap-1 text-teal-700" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">map</span>
+<span class="text-[10px]">Destinations</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="text-[10px]">Support</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-500" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-[10px]">Status</span>
+</a>
+</div>
+</body></html>
