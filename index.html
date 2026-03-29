@@ -20,6 +20,15 @@
   <meta name="twitter:description" content="International holidays, flights, visa assistance, travel insurance and forex support." />
   <meta name="twitter:image" content="https://goglobal.forex/assets/images/og-home.jpg" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4Z9ES4F3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BM4Z9ES4F3');
+  </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -388,8 +397,8 @@
     <div class="container topbar-wrap">
       <div>Flights | Holidays | Visa | Insurance | Forex</div>
       <div>
-        <a href="tel:+919311354795">Call: +91 93113 54795</a> |
-        <a href="https://wa.me/919311354795" target="_blank" rel="noopener">WhatsApp</a> |
+        <a href="tel:+919311354795" onclick="gtag('event','call_click',{event_category:'lead',event_label:'topbar'});">Call: +91 93113 54795</a> |
+        <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'topbar'});" target="_blank" rel="noopener">WhatsApp</a> |
         <a href="mailto:info@goglobal.forex">info@goglobal.forex</a>
       </div>
     </div>
@@ -407,7 +416,7 @@
       </nav>
       <div class="nav-cta">
         <a class="btn btn-outline" href="#contact">Get Free Quote</a>
-        <a class="btn btn-secondary" href="https://wa.me/919311354795" target="_blank" rel="noopener">WhatsApp Now</a>
+        <a class="btn btn-secondary" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'header'});" target="_blank" rel="noopener">WhatsApp Now</a>
       </div>
     </div>
   </header>
@@ -421,7 +430,7 @@
           <p>Plan your trips with confidence. Get expert help for holiday packages, flights, visa documentation, travel insurance and foreign exchange support.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">Get Free Quote</a>
-            <a class="btn btn-secondary" href="https://wa.me/919311354795" target="_blank" rel="noopener">WhatsApp Us</a>
+            <a class="btn btn-secondary" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'hero'});" target="_blank" rel="noopener">WhatsApp Us</a>
           </div>
           <div class="hero-points">
             <span>Fast response</span>
@@ -583,7 +592,7 @@
           </div>
           <div class="cta-actions">
             <a class="btn btn-secondary" href="#contact">Get Free Quote</a>
-            <a class="btn btn-outline" style="border-color:#fff;color:#fff;" href="https://wa.me/919311354795" target="_blank" rel="noopener">WhatsApp Now</a>
+            <a class="btn btn-outline" style="border-color:#fff;color:#fff;" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'cta_banner'});" target="_blank" rel="noopener">WhatsApp Now</a>
           </div>
         </div>
       </div>
@@ -739,9 +748,9 @@
       </div>
       <div>
         <h3>Contact</h3>
-        <a href="tel:+919311354795">+91 93113 54795</a>
+        <a href="tel:+919311354795" onclick="gtag('event','call_click',{event_category:'lead',event_label:'footer'});">+91 93113 54795</a>
         <a href="mailto:info@goglobal.forex">info@goglobal.forex</a>
-        <a href="https://wa.me/919311354795" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'footer'});" target="_blank" rel="noopener">WhatsApp</a>
         <p>18A, Block 8, Subhash Nagar, New Delhi - 110027</p>
       </div>
     </div>
@@ -751,8 +760,8 @@
   </footer>
 
   <div class="sticky-mobile-cta">
-    <a href="tel:+919311354795">Call Now</a>
-    <a href="https://wa.me/919311354795" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="tel:+919311354795" onclick="gtag('event','call_click',{event_category:'lead',event_label:'mobile_sticky'});">Call Now</a>
+    <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'mobile_sticky'});" target="_blank" rel="noopener">WhatsApp</a>
     <a href="#contact">Enquire</a>
   </div>
 
@@ -774,7 +783,7 @@
         }
 
         const phone = String(formData.get('phone') || '').trim();
-        if (!/^\d{10}$/.test(phone)) {
+        if (!/^\\d{10}$/.test(phone)) {
           message.textContent = 'Please enter a valid 10-digit mobile number.';
           return;
         }
@@ -793,6 +802,12 @@
 
           const result = await response.json();
           if (response.ok && result.success) {
+            if (typeof gtag === 'function') {
+              gtag('event', 'form_submit', {
+                event_category: 'lead',
+                event_label: formId
+              });
+            }
             message.textContent = 'Thank you. Your enquiry has been submitted.';
             form.reset();
             window.location.href = '/thank-you.html';
