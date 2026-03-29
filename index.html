@@ -89,7 +89,6 @@
       --white: #ffffff;
       --muted: #6b7280;
       --border: #e5e7eb;
-      --success: #198754;
       --shadow: 0 10px 30px rgba(0,0,0,0.08);
       --radius: 16px;
       --max: 1180px;
@@ -107,7 +106,12 @@
 
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
-    .container { width: min(92%, var(--max)); margin: 0 auto; }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
     .btn {
       display: inline-block;
       padding: 14px 22px;
@@ -117,14 +121,47 @@
       border: 2px solid transparent;
       cursor: pointer;
     }
-    .btn-primary { background: var(--primary); color: var(--white); }
-    .btn-primary:hover { opacity: 0.92; }
-    .btn-secondary { background: var(--secondary); color: #111; }
-    .btn-outline { border-color: var(--primary); color: var(--primary); background: transparent; }
-    .section { padding: 72px 0; }
-    .section-title { font-size: 34px; line-height: 1.2; margin: 0 0 14px; }
-    .section-subtitle { color: var(--muted); margin: 0 0 28px; }
-    .grid { display: grid; gap: 24px; }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      opacity: 0.92;
+    }
+
+    .btn-secondary {
+      background: var(--secondary);
+      color: #111;
+    }
+
+    .btn-outline {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: transparent;
+    }
+
+    .section {
+      padding: 72px 0;
+    }
+
+    .section-title {
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 0 0 14px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 24px;
+    }
+
     .card {
       background: var(--white);
       border: 1px solid var(--border);
@@ -139,6 +176,7 @@
       font-size: 14px;
       padding: 10px 0;
     }
+
     .topbar-wrap {
       display: flex;
       flex-wrap: wrap;
@@ -155,6 +193,7 @@
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
     }
+
     .nav {
       display: flex;
       align-items: center;
@@ -162,47 +201,63 @@
       padding: 16px 0;
       gap: 20px;
     }
+
     .logo {
       font-size: 28px;
       font-weight: 800;
       color: var(--primary);
     }
+
     .nav-links {
       display: flex;
       gap: 18px;
       align-items: center;
       flex-wrap: wrap;
     }
-    .nav-links a { font-weight: 600; color: #334155; }
-    .nav-cta { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .nav-links a {
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .nav-cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
 
     .hero {
       background: linear-gradient(135deg, #eff6ff 0%, #ffffff 55%, #fff6ea 100%);
       padding: 70px 0 40px;
     }
+
     .hero-wrap {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       gap: 32px;
       align-items: center;
     }
+
     .hero h1 {
       font-size: 52px;
       line-height: 1.08;
       margin: 0 0 18px;
     }
+
     .hero p {
       font-size: 18px;
       color: #475569;
       max-width: 700px;
       margin: 0 0 26px;
     }
+
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
       margin-bottom: 18px;
     }
+
     .hero-points {
       display: flex;
       flex-wrap: wrap;
@@ -212,20 +267,28 @@
       font-weight: 600;
     }
 
-    .lead-form h3 { margin-top: 0; }
+    .lead-form h3 {
+      margin-top: 0;
+    }
+
     .form-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 14px;
       margin-bottom: 14px;
     }
-    .form-group { margin-bottom: 14px; }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
     label {
       display: block;
       font-weight: 700;
       margin-bottom: 8px;
       font-size: 14px;
     }
+
     input, select, textarea {
       width: 100%;
       padding: 13px 14px;
@@ -234,18 +297,28 @@
       font-size: 15px;
       outline: none;
     }
-    textarea { min-height: 100px; resize: vertical; }
-    .note { font-size: 13px; color: var(--muted); }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+    }
 
     .trust-strip {
       background: var(--white);
       padding: 18px 0 34px;
     }
+
     .trust-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
     }
+
     .trust-item {
       background: #fff;
       border: 1px solid var(--border);
@@ -264,10 +337,15 @@
 
     .service-card h3,
     .destination-card h3,
-    .testimonial-card h3 { margin-top: 0; }
+    .testimonial-card h3 {
+      margin-top: 0;
+    }
+
     .service-card p,
     .destination-card p,
-    .testimonial-card p { color: var(--muted); }
+    .testimonial-card p {
+      color: var(--muted);
+    }
 
     .why-wrap,
     .process-grid {
@@ -276,18 +354,22 @@
       gap: 28px;
       align-items: start;
     }
+
     .checklist {
       list-style: none;
       padding: 0;
       margin: 0;
     }
+
     .checklist li {
       padding: 14px 0;
       border-bottom: 1px solid var(--border);
       font-weight: 600;
     }
 
-    .process-grid .card h3 { margin-top: 0; }
+    .process-grid .card h3 {
+      margin-top: 0;
+    }
 
     .cta-banner {
       background: var(--primary);
@@ -299,25 +381,54 @@
       gap: 20px;
       align-items: center;
     }
-    .cta-banner h2 { margin: 0 0 10px; }
-    .cta-banner p { margin: 0; color: rgba(255,255,255,0.88); }
-    .cta-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
-    .faq-item h3 { font-size: 18px; margin-top: 0; }
-    .faq-item p { margin-bottom: 0; color: var(--muted); }
+    .cta-banner h2 {
+      margin: 0 0 10px;
+    }
+
+    .cta-banner p {
+      margin: 0;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .faq-item h3 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .faq-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
 
     footer {
       background: #0b2036;
       color: #dbe4f0;
       padding: 56px 0 24px;
     }
+
     .footer-grid {
       display: grid;
       grid-template-columns: 1.3fr 1fr 1fr 1fr;
       gap: 22px;
     }
-    .footer-grid h3 { color: #fff; }
-    .footer-grid a { display: block; margin: 8px 0; color: #dbe4f0; }
+
+    .footer-grid h3 {
+      color: #fff;
+    }
+
+    .footer-grid a {
+      display: block;
+      margin: 8px 0;
+      color: #dbe4f0;
+    }
+
     .footer-bottom {
       border-top: 1px solid rgba(255,255,255,0.1);
       margin-top: 28px;
@@ -337,6 +448,7 @@
       grid-template-columns: repeat(3, 1fr);
       z-index: 1200;
     }
+
     .sticky-mobile-cta a {
       padding: 14px 10px;
       text-align: center;
@@ -367,8 +479,15 @@
       .trust-grid {
         grid-template-columns: 1fr 1fr;
       }
-      .hero h1 { font-size: 42px; }
-      .nav { flex-direction: column; align-items: flex-start; }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     @media (max-width: 640px) {
@@ -384,11 +503,27 @@
       .form-row {
         grid-template-columns: 1fr;
       }
-      .hero h1 { font-size: 34px; }
-      .section { padding: 56px 0; }
-      .cta-banner { flex-direction: column; align-items: flex-start; }
-      .sticky-mobile-cta { display: grid; }
-      body { padding-bottom: 62px; }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .cta-banner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .sticky-mobile-cta {
+        display: grid;
+      }
+
+      body {
+        padding-bottom: 62px;
+      }
     }
   </style>
 </head>
@@ -777,13 +912,15 @@
 
         const formData = new FormData(form);
         const honeypot = formData.get('website');
+
         if (honeypot) {
           message.textContent = 'Spam detected.';
           return;
         }
 
         const phone = String(formData.get('phone') || '').trim();
-        if (!/^\\d{10}$/.test(phone)) {
+
+        if (!/^\d{10}$/.test(phone)) {
           message.textContent = 'Please enter a valid 10-digit mobile number.';
           return;
         }
@@ -801,6 +938,7 @@
           });
 
           const result = await response.json();
+
           if (response.ok && result.success) {
             if (typeof gtag === 'function') {
               gtag('event', 'form_submit', {
@@ -808,6 +946,7 @@
                 event_label: formId
               });
             }
+
             message.textContent = 'Thank you. Your enquiry has been submitted.';
             form.reset();
             window.location.href = '/thank-you.html';
