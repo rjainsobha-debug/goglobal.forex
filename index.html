@@ -3,990 +3,361 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GoGlobal Travel Solutions | Holidays, Visa, Travel Insurance & Forex</title>
-  <meta name="description" content="GoGlobal Travel Solutions helps with international holidays, flights, visa assistance, travel insurance and forex support. Get quick travel assistance and a free quote." />
-  <meta name="keywords" content="international holidays, visa assistance, travel insurance, forex, flight booking, travel agency, Delhi NCR, GoGlobal" />
+  <title>GoGlobal Travel Solutions | Packages, Visa, Travel Insurance & Forex</title>
+  <meta name="description" content="GoGlobal Travel Solutions helps with international packages, visa assistance, travel insurance, flights and forex support." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://goglobal.forex" />
-
+  <link rel="canonical" href="https://goglobal.forex/index.html" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="GoGlobal Travel Solutions | Holidays, Visa, Travel Insurance & Forex" />
-  <meta property="og:description" content="International holidays, flights, visa assistance, travel insurance and forex support in one place." />
-  <meta property="og:url" content="https://goglobal.forex" />
+  <meta property="og:title" content="GoGlobal Travel Solutions | Packages, Visa, Travel Insurance & Forex" />
+  <meta property="og:description" content="GoGlobal Travel Solutions helps with international packages, visa assistance, travel insurance, flights and forex support." />
+  <meta property="og:url" content="https://goglobal.forex/index.html" />
   <meta property="og:image" content="https://goglobal.forex/assets/images/og-home.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GoGlobal Travel Solutions" />
-  <meta name="twitter:description" content="International holidays, flights, visa assistance, travel insurance and forex support." />
-  <meta name="twitter:image" content="https://goglobal.forex/assets/images/og-home.jpg" />
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4Z9ES4F3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-BM4Z9ES4F3');
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "GoGlobal Travel Solutions Pvt. Ltd.",
-    "url": "https://goglobal.forex",
-    "logo": "https://goglobal.forex/assets/images/logo.png",
-    "description": "Travel assistance for international holidays, flights, visas, travel insurance and foreign exchange.",
-    "telephone": "+91-9311354795",
-    "email": "info@goglobal.forex",
-    "areaServed": "New Delhi",
-    "sameAs": [
-      "https://www.instagram.com/",
-      "https://www.facebook.com/"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do you help with international holiday planning?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we assist with holiday planning, itinerary coordination and travel support based on your requirement."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you assist with visa documentation?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we help with visa guidance and document support for eligible travel requirements."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do you provide travel insurance support?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we assist with travel insurance options for individuals, families and business travellers."
-        }
-      }
-    ]
-  }
-  </script>
-
   <style>
-    :root {
-      --primary: #0d3b66;
-      --secondary: #f4a261;
-      --bg: #f7f9fc;
-      --text: #1f2937;
-      --white: #ffffff;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-      --shadow: 0 10px 30px rgba(0,0,0,0.08);
-      --radius: 16px;
-      --max: 1180px;
-    }
+:root {
+  --primary: #0d3b66;
+  --secondary: #f4a261;
+  --bg: #f7f9fc;
+  --text: #1f2937;
+  --white: #ffffff;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+  --radius: 16px;
+  --max: 1180px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+.container { width: min(92%, var(--max)); margin: 0 auto; }
+.topbar { background: var(--primary); color: var(--white); font-size: 14px; padding: 10px 0; }
+.topbar-wrap { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:center; }
+header { position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+.nav { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:16px 0; }
+.logo { font-size: 28px; font-weight: 800; color: var(--primary); }
+.nav-links { display:flex; gap:18px; flex-wrap:wrap; }
+.nav-links a { font-weight:600; color:#334155; }
+.nav-cta { display:flex; gap:12px; flex-wrap:wrap; }
+.btn { display:inline-block; padding:14px 22px; border-radius:999px; font-weight:700; border:2px solid transparent; cursor:pointer; }
+.btn-primary { background: var(--primary); color:#fff; }
+.btn-secondary { background: var(--secondary); color:#111; }
+.btn-outline { background: transparent; color: var(--primary); border-color: var(--primary); }
+.section { padding: 72px 0; }
+.section-title { font-size: 34px; line-height: 1.2; margin: 0 0 14px; }
+.section-subtitle { color: var(--muted); margin: 0 0 28px; }
+.grid-2 { display:grid; grid-template-columns: 1fr 1fr; gap:24px; }
+.grid-3 { display:grid; grid-template-columns: repeat(3, 1fr); gap:24px; }
+.card { background: var(--white); border:1px solid var(--border); border-radius: var(--radius); padding:24px; box-shadow: var(--shadow); }
+.hero { background: linear-gradient(135deg, #eff6ff 0%, #ffffff 55%, #fff6ea 100%); padding: 74px 0 48px; }
+.hero-wrap { display:grid; grid-template-columns: 1.15fr 0.85fr; gap:32px; align-items:center; }
+.hero h1 { font-size: 50px; line-height: 1.08; margin: 0 0 16px; }
+.hero p { font-size: 18px; color: #475569; max-width: 760px; margin: 0 0 18px; }
+.hero-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top: 20px; }
+.badges { display:flex; flex-wrap:wrap; gap:10px; margin-top: 18px; }
+.badge { background:#fff; border:1px solid var(--border); border-radius:999px; padding:10px 14px; font-size:14px; font-weight:700; }
+.form-group { margin-bottom:14px; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+label { display:block; font-weight:700; margin-bottom:8px; font-size:14px; }
+input, select, textarea { width:100%; padding:13px 14px; border:1px solid #cbd5e1; border-radius:12px; font-size:15px; outline:none; }
+textarea { min-height:110px; resize:vertical; }
+.note, .form-message { font-size:13px; color: var(--muted); }
+footer { background:#0b2036; color:#dbe4f0; padding:56px 0 24px; }
+.footer-grid { display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:22px; }
+.footer-grid h3 { color:#fff; }
+.footer-grid a { display:block; margin:8px 0; color:#dbe4f0; }
+.footer-bottom { border-top:1px solid rgba(255,255,255,0.1); margin-top:28px; padding-top:18px; font-size:14px; color:#b7c6d8; }
+.sticky-mobile-cta { position:fixed; bottom:0; left:0; right:0; background:var(--white); border-top:1px solid var(--border); display:none; grid-template-columns:repeat(3, 1fr); z-index:1200; }
+.sticky-mobile-cta a { padding:14px 10px; text-align:center; font-weight:700; font-size:14px; }
+ul.clean { list-style:none; padding:0; margin:0; }
+ul.clean li { padding:10px 0; border-bottom:1px solid var(--border); font-weight:600; }
+@media (max-width: 992px) {
+  .hero-wrap, .grid-2, .grid-3, .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 40px; }
+  .nav { flex-direction:column; align-items:flex-start; }
+}
+@media (max-width: 640px) {
+  .hero-wrap, .grid-2, .grid-3, .footer-grid, .form-row { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 32px; }
+  .sticky-mobile-cta { display:grid; }
+  body { padding-bottom:62px; }
+}
+</style>
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4Z9ES4F3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-BM4Z9ES4F3');
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.6;
-    }
-
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-
-    .container {
-      width: min(92%, var(--max));
-      margin: 0 auto;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 22px;
-      border-radius: 999px;
-      font-weight: 700;
-      transition: 0.25s ease;
-      border: 2px solid transparent;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: var(--white);
-    }
-
-    .btn-primary:hover {
-      opacity: 0.92;
-    }
-
-    .btn-secondary {
-      background: var(--secondary);
-      color: #111;
-    }
-
-    .btn-outline {
-      border-color: var(--primary);
-      color: var(--primary);
-      background: transparent;
-    }
-
-    .section {
-      padding: 72px 0;
-    }
-
-    .section-title {
-      font-size: 34px;
-      line-height: 1.2;
-      margin: 0 0 14px;
-    }
-
-    .section-subtitle {
-      color: var(--muted);
-      margin: 0 0 28px;
-    }
-
-    .grid {
-      display: grid;
-      gap: 24px;
-    }
-
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .topbar {
-      background: var(--primary);
-      color: var(--white);
-      font-size: 14px;
-      padding: 10px 0;
-    }
-
-    .topbar-wrap {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px 18px;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 0;
-      gap: 20px;
-    }
-
-    .logo {
-      font-size: 28px;
-      font-weight: 800;
-      color: var(--primary);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      font-weight: 600;
-      color: #334155;
-    }
-
-    .nav-cta {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #eff6ff 0%, #ffffff 55%, #fff6ea 100%);
-      padding: 70px 0 40px;
-    }
-
-    .hero-wrap {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 32px;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 52px;
-      line-height: 1.08;
-      margin: 0 0 18px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #475569;
-      max-width: 700px;
-      margin: 0 0 26px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-
-    .hero-points {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      color: var(--muted);
-      font-size: 15px;
-      font-weight: 600;
-    }
-
-    .lead-form h3 {
-      margin-top: 0;
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-      margin-bottom: 14px;
-    }
-
-    .form-group {
-      margin-bottom: 14px;
-    }
-
-    label {
-      display: block;
-      font-weight: 700;
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 13px 14px;
-      border: 1px solid #cbd5e1;
-      border-radius: 12px;
-      font-size: 15px;
-      outline: none;
-    }
-
-    textarea {
-      min-height: 100px;
-      resize: vertical;
-    }
-
-    .note {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .trust-strip {
-      background: var(--white);
-      padding: 18px 0 34px;
-    }
-
-    .trust-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .trust-item {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 18px;
-      text-align: center;
-      font-weight: 700;
-    }
-
-    .services-grid,
-    .destinations-grid,
-    .testimonials-grid,
-    .faq-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .service-card h3,
-    .destination-card h3,
-    .testimonial-card h3 {
-      margin-top: 0;
-    }
-
-    .service-card p,
-    .destination-card p,
-    .testimonial-card p {
-      color: var(--muted);
-    }
-
-    .why-wrap,
-    .process-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-      align-items: start;
-    }
-
-    .checklist {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .checklist li {
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-      font-weight: 600;
-    }
-
-    .process-grid .card h3 {
-      margin-top: 0;
-    }
-
-    .cta-banner {
-      background: var(--primary);
-      color: var(--white);
-      border-radius: 24px;
-      padding: 34px;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .cta-banner h2 {
-      margin: 0 0 10px;
-    }
-
-    .cta-banner p {
-      margin: 0;
-      color: rgba(255,255,255,0.88);
-    }
-
-    .cta-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .faq-item h3 {
-      font-size: 18px;
-      margin-top: 0;
-    }
-
-    .faq-item p {
-      margin-bottom: 0;
-      color: var(--muted);
-    }
-
-    footer {
-      background: #0b2036;
-      color: #dbe4f0;
-      padding: 56px 0 24px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 1fr 1fr 1fr;
-      gap: 22px;
-    }
-
-    .footer-grid h3 {
-      color: #fff;
-    }
-
-    .footer-grid a {
-      display: block;
-      margin: 8px 0;
-      color: #dbe4f0;
-    }
-
-    .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      margin-top: 28px;
-      padding-top: 18px;
-      font-size: 14px;
-      color: #b7c6d8;
-    }
-
-    .sticky-mobile-cta {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: var(--white);
-      border-top: 1px solid var(--border);
-      display: none;
-      grid-template-columns: repeat(3, 1fr);
-      z-index: 1200;
-    }
-
-    .sticky-mobile-cta a {
-      padding: 14px 10px;
-      text-align: center;
-      font-weight: 700;
-      font-size: 14px;
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      border: 0;
-    }
-
-    @media (max-width: 992px) {
-      .hero-wrap,
-      .why-wrap,
-      .process-grid,
-      .footer-grid,
-      .services-grid,
-      .destinations-grid,
-      .testimonials-grid,
-      .faq-grid,
-      .trust-grid {
-        grid-template-columns: 1fr 1fr;
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.leadForm').forEach((form) => {
+    const formMessage = form.querySelector('.form-message');
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      formMessage.textContent = 'Submitting...';
+      const formData = new FormData(form);
+      const honeypot = formData.get('website');
+      if (honeypot) {
+        formMessage.textContent = 'Spam detected.';
+        return;
       }
-
-      .hero h1 {
-        font-size: 42px;
+      const phone = String(formData.get('phone') || '').trim();
+      if (!/^\d{10}$/.test(phone)) {
+        formMessage.textContent = 'Please enter a valid 10-digit mobile number.';
+        return;
       }
-
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
+      const payload = Object.fromEntries(formData.entries());
+      payload.timestamp = new Date().toISOString();
+      payload.referrer = document.referrer || '';
+      payload.user_agent = navigator.userAgent;
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        let result = {};
+        const rawText = await response.text();
+        try { result = rawText ? JSON.parse(rawText) : {}; }
+        catch (err) { result = { message: rawText || 'Server did not return valid JSON.' }; }
+        if (response.ok && result.success) {
+          if (typeof gtag === 'function') {
+            gtag('event', 'form_submit', { event_category: 'lead', event_label: payload.service || payload.destination || 'site_form' });
+          }
+          form.reset();
+          window.location.href = '/thank-you.html';
+        } else {
+          formMessage.textContent = result.message || ('Submission failed. Server returned ' + response.status);
+        }
+      } catch (error) {
+        formMessage.textContent = 'Unable to reach server. Please try again.';
       }
-    }
+    });
+  });
+});
+</script>
 
-    @media (max-width: 640px) {
-      .hero-wrap,
-      .why-wrap,
-      .process-grid,
-      .footer-grid,
-      .services-grid,
-      .destinations-grid,
-      .testimonials-grid,
-      .faq-grid,
-      .trust-grid,
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 34px;
-      }
-
-      .section {
-        padding: 56px 0;
-      }
-
-      .cta-banner {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .sticky-mobile-cta {
-        display: grid;
-      }
-
-      body {
-        padding-bottom: 62px;
-      }
-    }
-  </style>
 </head>
 <body>
+
   <div class="topbar">
     <div class="container topbar-wrap">
-      <div>Flights | Holidays | Visa | Insurance | Forex</div>
+      <div>Flights | Packages | Visa | Insurance | Forex</div>
       <div>
-        <a href="tel:+919311354795" onclick="gtag('event','call_click',{event_category:'lead',event_label:'topbar'});">Call: +91 93113 54795</a> |
-        <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'topbar'});" target="_blank" rel="noopener">WhatsApp</a> |
+        <a href="tel:+919311354795">Call: +91 93113 54795</a> |
+        <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" target="_blank" rel="noopener">WhatsApp</a> |
         <a href="mailto:info@goglobal.forex">info@goglobal.forex</a>
       </div>
     </div>
   </div>
-
   <header>
     <div class="container nav">
-      <a class="logo" href="/">GoGlobal</a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="international-packages.html">Packages</a>
-        <a href="#services">Services</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <a class="logo" href="index.html">GoGlobal</a>
+      <nav class="nav-links"><a href="index.html" style="color:#0d3b66;border-bottom:2px solid #0d3b66;padding-bottom:4px;">Home</a><a href="international-packages.html">Packages</a><a href="visa-assistance.html">Visa Assistance</a><a href="travel-insurance.html">Travel Insurance</a><a href="forex.html">Forex</a><a href="index.html#contact">Contact</a></nav>
       <div class="nav-cta">
-        <a class="btn btn-outline" href="#contact">Get Free Quote</a>
-        <a class="btn btn-secondary" href="international-packages.html">Explore Packages</a>
+        <a class="btn btn-secondary" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" target="_blank" rel="noopener">WhatsApp Now</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-wrap">
-        <div>
-          <p><strong>GoGlobal Travel Solutions Pvt. Ltd.</strong></p>
-          <h1>International Travel, Visa, Forex & Insurance — All in One Place</h1>
-          <p>Plan your trips with confidence. Get expert help for holiday packages, flights, visa documentation, travel insurance and foreign exchange support.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Get Free Quote</a>
-            <a class="btn btn-secondary" href="international-packages.html">Explore International Packages</a>
-            <a class="btn btn-outline" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'hero'});" target="_blank" rel="noopener">WhatsApp Us</a>
-          </div>
-          <div class="hero-points">
-            <span>Fast response</span>
-            <span>Expert assistance</span>
-            <span>Personalized support</span>
-          </div>
+<main>
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <p><strong>GoGlobal Travel Solutions Pvt. Ltd.</strong></p>
+        <h1>Travel Packages, Visa, Travel Insurance & Forex — In One Place</h1>
+        <p>We help travelers with international holiday planning, visa assistance, travel insurance, flights and foreign exchange support from Delhi NCR.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Get Free Quote</a>
+          <a class="btn btn-secondary" href="international-packages.html">Explore International Packages</a>
+          <a class="btn btn-outline" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" target="_blank" rel="noopener">WhatsApp Us</a>
         </div>
-
-        <aside class="card lead-form" aria-labelledby="lead-form-title">
-          <h3 id="lead-form-title">Get a Quick Travel Quote</h3>
-          <form id="leadForm" action="https://gogloballeadsapi-production.up.railway.app/api/lead" method="POST">
+        <div class="badges">
+          <span class="badge">Fast response</span>
+          <span class="badge">Personalized support</span>
+          <span class="badge">Packages + Insurance + Forex</span>
+        </div>
+      </div>
+      
+      <aside class="card">
+        <h3 style="margin-top:0;">Get a Quick Quote</h3>
+        <form class="leadForm" action="https://gogloballeadsapi-production.up.railway.app/api/lead" method="POST">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input name="name" type="text" required />
+          </div>
+          <div class="form-row">
             <div class="form-group">
-              <label for="name">Full Name</label>
-              <input id="name" name="name" type="text" placeholder="Enter your full name" required />
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="phone">Mobile Number</label>
-                <input id="phone" name="phone" type="tel" placeholder="Enter mobile number" required />
-              </div>
-              <div class="form-group">
-                <label for="service">Service Interested In</label>
-                <select id="service" name="service" required>
-                  <option value="">Select service</option>
-                  <option>Holiday Package</option>
-                  <option>Flight Booking</option>
-                  <option>Visa Assistance</option>
-                  <option>Travel Insurance</option>
-                  <option>Forex</option>
-                  <option>Corporate Travel</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="destination">Destination</label>
-                <input id="destination" name="destination" type="text" placeholder="Dubai, Thailand, Europe..." />
-              </div>
-              <div class="form-group">
-                <label for="travel_month">Travel Month</label>
-                <input id="travel_month" name="travel_month" type="text" placeholder="June 2026" />
-              </div>
-            </div>
-
-            <input type="hidden" name="source" value="homepage-form" />
-            <input type="hidden" name="landing_page" value="/" />
-            <input type="hidden" name="campaign" value="organic" />
-            <input type="hidden" name="website" value="" class="sr-only" tabindex="-1" autocomplete="off" />
-
-            <button class="btn btn-primary" type="submit" style="width:100%;">Get My Quote</button>
-            <p class="note">By submitting this form, you agree to be contacted regarding your travel enquiry.</p>
-            <p class="note" id="formMessage" aria-live="polite"></p>
-          </form>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" style="background:#f7f9fc;">
-      <div class="container">
-        <h2 class="section-title">Explore International Tour Packages</h2>
-        <p class="section-subtitle">
-          Compare multiple destinations in one place and get a quick quote instantly.
-        </p>
-        <div style="text-align:center; margin-top:20px;">
-          <a class="btn btn-primary" href="international-packages.html">
-            View All Packages (Dubai, Thailand, Singapore & More)
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-strip">
-      <div class="container trust-grid">
-        <div class="trust-item">Quick Response</div>
-        <div class="trust-item">End-to-End Support</div>
-        <div class="trust-item">Transparent Assistance</div>
-        <div class="trust-item">Personalized Travel Planning</div>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <h2 class="section-title">Our Travel Services</h2>
-        <p class="section-subtitle">One point of contact for multiple travel requirements.</p>
-        <div class="grid services-grid">
-          <article class="card service-card">
-            <h3>International Holidays</h3>
-            <p>Customized holiday packages for couples, families, groups and corporate travellers.</p>
-            <a class="btn btn-outline" href="international-packages.html">Learn More</a>
-          </article>
-          <article class="card service-card">
-            <h3>Flight Bookings</h3>
-            <p>Support for domestic and international flight planning with convenient coordination.</p>
-            <a class="btn btn-outline" href="#contact">Learn More</a>
-          </article>
-          <article class="card service-card">
-            <h3>Visa Assistance</h3>
-            <p>Documentation guidance and application assistance for tourist and business travel.</p>
-            <a class="btn btn-outline" href="#contact">Learn More</a>
-          </article>
-          <article class="card service-card">
-            <h3>Travel Insurance</h3>
-            <p>Protect your journey with travel insurance options for leisure and business travel.</p>
-            <a class="btn btn-outline" href="#contact">Learn More</a>
-          </article>
-          <article class="card service-card">
-            <h3>Forex / Currency Exchange</h3>
-            <p>Convenient foreign exchange support for international trips and travel planning.</p>
-            <a class="btn btn-outline" href="#contact">Learn More</a>
-          </article>
-          <article class="card service-card">
-            <h3>Corporate Travel</h3>
-            <p>Coordinated travel assistance for executives, teams and business movement requirements.</p>
-            <a class="btn btn-outline" href="#contact">Learn More</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="why-us" style="background: var(--bg);">
-      <div class="container why-wrap">
-        <div>
-          <h2 class="section-title">Why Travellers Choose GoGlobal</h2>
-          <p class="section-subtitle">Responsive assistance for holiday, visa, insurance and forex requirements.</p>
-          <p>GoGlobal Travel Solutions Pvt. Ltd. helps travellers with international holidays, flights, visa support, travel insurance and foreign exchange assistance. We focus on responsive service, personalized coordination and convenient support for family, leisure and business travel needs.</p>
-        </div>
-        <div class="card">
-          <ul class="checklist">
-            <li>Single-point support for multiple travel needs</li>
-            <li>Assistance for holidays, visa, insurance and forex</li>
-            <li>Faster coordination and personalized guidance</li>
-            <li>Support for family, business and urgent travel</li>
-            <li>Reliable communication on WhatsApp and phone</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Popular Travel Enquiries</h2>
-        <p class="section-subtitle">Explore our package page for destination details and quick quote forms.</p>
-        <div class="grid destinations-grid">
-          <article class="card destination-card"><h3>Dubai</h3><p>Packages, visa support, insurance and forex assistance.</p></article>
-          <article class="card destination-card"><h3>Thailand</h3><p>Family and leisure travel planning with quick guidance.</p></article>
-          <article class="card destination-card"><h3>Singapore</h3><p>City breaks, family travel and premium holiday planning.</p></article>
-          <article class="card destination-card"><h3>Bali</h3><p>Popular honeymoon and leisure travel coordination.</p></article>
-          <article class="card destination-card"><h3>Europe</h3><p>Holiday planning, Schengen guidance and insurance support.</p></article>
-          <article class="card destination-card"><h3>Maldives</h3><p>Premium getaway planning with travel support.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="background: var(--bg);">
-      <div class="container">
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-subtitle">A simple process from enquiry to travel support.</p>
-        <div class="process-grid">
-          <div class="card"><h3>1. Share Your Requirement</h3><p>Tell us your destination, travel plan, service need and timeline.</p></div>
-          <div class="card"><h3>2. Get Expert Assistance</h3><p>We review your requirement and guide you on the next steps.</p></div>
-          <div class="card"><h3>3. Receive Options / Quote</h3><p>Get suitable support options for your travel requirement.</p></div>
-          <div class="card"><h3>4. Confirm and Travel Confidently</h3><p>Move ahead with the right support for a smoother travel experience.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="cta-banner">
-          <div>
-            <h2>Need quick assistance for your next international trip?</h2>
-            <p>Share your requirement and get a quick response from our team.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-secondary" href="#contact">Get Free Quote</a>
-            <a class="btn btn-outline" style="border-color:#fff;color:#fff;" href="international-packages.html">Explore Packages</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="background: var(--bg);">
-      <div class="container">
-        <h2 class="section-title">What Clients Value</h2>
-        <p class="section-subtitle">Keep this section and later replace with real reviews and names.</p>
-        <div class="grid testimonials-grid">
-          <article class="card testimonial-card">
-            <h3>Fast Support</h3>
-            <p>“Quick response and clear guidance for our international travel planning.”</p>
-          </article>
-          <article class="card testimonial-card">
-            <h3>Convenient Coordination</h3>
-            <p>“Helpful support for visa, insurance and trip coordination in one place.”</p>
-          </article>
-          <article class="card testimonial-card">
-            <h3>Reliable Communication</h3>
-            <p>“Easy to coordinate on WhatsApp and phone for urgent travel requirements.”</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="container">
-        <h2 class="section-title">Tell Us What You Need</h2>
-        <p class="section-subtitle">Planning an international trip? Share your requirement and get assistance quickly.</p>
-        <div class="card">
-          <form id="detailedLeadForm" action="https://gogloballeadsapi-production.up.railway.app/api/lead" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="d-name">Full Name</label>
-                <input id="d-name" name="name" type="text" required />
-              </div>
-              <div class="form-group">
-                <label for="d-phone">Mobile Number</label>
-                <input id="d-phone" name="phone" type="tel" required />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="d-email">Email Address</label>
-                <input id="d-email" name="email" type="email" />
-              </div>
-              <div class="form-group">
-                <label for="d-service">Service Interested In</label>
-                <select id="d-service" name="service" required>
-                  <option value="">Select service</option>
-                  <option>Holiday Package</option>
-                  <option>Flight Booking</option>
-                  <option>Visa Assistance</option>
-                  <option>Travel Insurance</option>
-                  <option>Forex</option>
-                  <option>Corporate Travel</option>
-                  <option>Other</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="d-destination">Destination / Country</label>
-                <input id="d-destination" name="destination" type="text" />
-              </div>
-              <div class="form-group">
-                <label for="d-date">Travel Date / Month</label>
-                <input id="d-date" name="travel_date" type="text" placeholder="15 June 2026 or June 2026" />
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="d-travellers">Number of Travellers</label>
-                <input id="d-travellers" name="travellers" type="number" min="1" />
-              </div>
-              <div class="form-group">
-                <label for="d-callback">Preferred Callback Time</label>
-                <input id="d-callback" name="callback_time" type="text" placeholder="Morning / Afternoon / Evening" />
-              </div>
+              <label>Mobile Number</label>
+              <input name="phone" type="tel" required />
             </div>
             <div class="form-group">
-              <label for="d-message">Message</label>
-              <textarea id="d-message" name="message" placeholder="Tell us your requirement"></textarea>
+              <label>Service Interested In</label>
+              <select name="service" required>
+                <option value="">Select service</option>
+                <option selected>Holiday Package</option>
+                <option>Flight Booking</option>
+                <option>Visa Assistance</option>
+                <option>Travel Insurance</option>
+                <option>Forex</option>
+              </select>
             </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Destination / Country</label>
+              <input name="destination" type="text" value="" />
+            </div>
+            <div class="form-group">
+              <label>Travel Month</label>
+              <input name="travel_month" type="text" placeholder="June 2026" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Travellers</label>
+              <input name="travellers" type="number" min="1" />
+            </div>
+            <div class="form-group">
+              <label>Preferred Callback Time</label>
+              <input name="callback_time" type="text" placeholder="Morning / Afternoon / Evening" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell us your requirement"></textarea>
+          </div>
+          <input type="hidden" name="source" value="homepage_form" />
+          <input type="hidden" name="landing_page" value="" />
+          <input type="hidden" name="campaign" value="organic" />
+          <input type="hidden" name="website" value="" />
+          <button class="btn btn-primary" type="submit" style="width:100%;">Submit Enquiry</button>
+          <p class="note">We respond within 5–10 minutes on WhatsApp.</p>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </aside>
 
-            <input type="hidden" name="source" value="detailed-homepage-form" />
-            <input type="hidden" name="landing_page" value="/" />
-            <input type="hidden" name="campaign" value="organic" />
-            <input type="hidden" name="website" value="" class="sr-only" tabindex="-1" autocomplete="off" />
+    </div>
+  </section>
 
-            <button class="btn btn-primary" type="submit">Submit Enquiry</button>
-            <p class="note" id="detailedFormMessage" aria-live="polite"></p>
-          </form>
-        </div>
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Our Core Services</h2>
+      <p class="section-subtitle">Use GoGlobal for both travel planning and key travel-related services.</p>
+      <div class="grid-3">
+        <div class="card"><h3>International Packages</h3><p>Destination-based travel planning for Dubai, Thailand, Singapore, Bali, Europe and more.</p><a class="btn btn-outline" href="international-packages.html">View Packages</a></div>
+        <div class="card"><h3>Visa Assistance</h3><p>Guidance for travel documentation planning and visa-related requirements.</p><a class="btn btn-outline" href="visa-assistance.html">View Visa Page</a></div>
+        <div class="card"><h3>Travel Insurance</h3><p>Protection for international travel, family trips and business travel.</p><a class="btn btn-outline" href="travel-insurance.html">View Insurance Page</a></div>
+        <div class="card"><h3>Forex / Currency Exchange</h3><p>Foreign exchange support for international travelers with quick coordination.</p><a class="btn btn-outline" href="forex.html">View Forex Page</a></div>
+        <div class="card"><h3>Flight Assistance</h3><p>Support for domestic and international flight planning as part of your travel requirement.</p><a class="btn btn-outline" href="#contact">Get Flight Help</a></div>
+        <div class="card"><h3>Combined Travel Support</h3><p>Need package + visa + insurance + forex together? We coordinate all of it in one place.</p><a class="btn btn-outline" href="#contact">Get Combined Quote</a></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" id="faq" style="background: var(--bg);">
-      <div class="container">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <p class="section-subtitle">Useful for both user trust and homepage SEO.</p>
-        <div class="grid faq-grid">
-          <article class="card faq-item">
-            <h3>Do you help with international holiday planning?</h3>
-            <p>Yes, we assist with travel planning and support based on your requirement.</p>
-          </article>
-          <article class="card faq-item">
-            <h3>Can you assist with visa documentation?</h3>
-            <p>Yes, we help guide travellers on documentation and related travel support.</p>
-          </article>
-          <article class="card faq-item">
-            <h3>Do you provide travel insurance support?</h3>
-            <p>Yes, travel insurance support can be arranged for various travel needs.</p>
-          </article>
-          <article class="card faq-item">
-            <h3>Can I get help with foreign exchange?</h3>
-            <p>Yes, forex assistance can be coordinated for eligible travel requirements.</p>
-          </article>
-          <article class="card faq-item">
-            <h3>Do you support urgent travel enquiries?</h3>
-            <p>Yes, quick-response support can be provided depending on the requirement.</p>
-          </article>
-          <article class="card faq-item">
-            <h3>Do you handle family and corporate travel?</h3>
-            <p>Yes, support can be planned for leisure, family and business travel requirements.</p>
-          </article>
-        </div>
+  <section class="section" style="background:#f7f9fc;">
+    <div class="container grid-2">
+      <div class="card">
+        <h2 class="section-title">Why Travellers Choose GoGlobal</h2>
+        <ul class="clean">
+          <li>Single point of support for multiple travel needs</li>
+          <li>Quick response on call and WhatsApp</li>
+          <li>Useful for families, couples and premium travel</li>
+          <li>Packages, insurance, forex and visa support together</li>
+          <li>Delhi NCR based support</li>
+        </ul>
       </div>
-    </section>
-  </main>
+      <div class="card">
+        <h2 class="section-title">Popular Interest</h2>
+        <ul class="clean">
+          <li><a href="international-packages.html#dubai">Dubai Packages</a></li>
+          <li><a href="international-packages.html#thailand">Thailand Packages</a></li>
+          <li><a href="international-packages.html#singapore">Singapore Packages</a></li>
+          <li><a href="travel-insurance.html">Travel Insurance</a></li>
+          <li><a href="forex.html">Forex / Currency Exchange</a></li>
+          <li><a href="visa-assistance.html">Visa Assistance</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Tell Us What You Need</h2>
+      <p class="section-subtitle">Share your requirement and we will get back to you quickly.</p>
+      <div class="card">
+        <form class="leadForm" action="https://gogloballeadsapi-production.up.railway.app/api/lead" method="POST">
+          <div class="form-row">
+            <div class="form-group"><label>Full Name</label><input name="name" type="text" required /></div>
+            <div class="form-group"><label>Mobile Number</label><input name="phone" type="tel" required /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Email Address</label><input name="email" type="email" /></div>
+            <div class="form-group">
+              <label>Service Interested In</label>
+              <select name="service" required>
+                <option value="">Select service</option>
+                <option>Holiday Package</option>
+                <option>Visa Assistance</option>
+                <option>Travel Insurance</option>
+                <option>Forex</option>
+                <option>Flight Booking</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Destination / Country</label><input name="destination" type="text" /></div>
+            <div class="form-group"><label>Travel Date / Month</label><input name="travel_date" type="text" placeholder="15 June 2026 or June 2026" /></div>
+          </div>
+          <div class="form-group"><label>Message</label><textarea name="message" placeholder="Tell us your requirement"></textarea></div>
+          <input type="hidden" name="source" value="homepage_detailed_form" />
+          <input type="hidden" name="landing_page" value="/index.html" />
+          <input type="hidden" name="campaign" value="organic" />
+          <input type="hidden" name="website" value="" />
+          <button class="btn btn-primary" type="submit">Submit Enquiry</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
   <footer>
     <div class="container footer-grid">
       <div>
         <h3>GoGlobal Travel Solutions Pvt. Ltd.</h3>
-        <p>International holidays, flights, visa assistance, travel insurance and forex support with personalized coordination.</p>
+        <p>International travel support for packages, visa assistance, travel insurance, flights and forex.</p>
       </div>
       <div>
         <h3>Quick Links</h3>
-        <a href="#home">Home</a>
+        <a href="index.html">Home</a>
         <a href="international-packages.html">International Packages</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div>
-        <h3>Services</h3>
-        <a href="international-packages.html">International Packages</a>
-        <a href="#services">Flights</a>
-        <a href="#services">Visa Assistance</a>
-        <a href="#services">Travel Insurance</a>
-        <a href="#services">Forex</a>
+        <a href="visa-assistance.html">Visa Assistance</a>
+        <a href="travel-insurance.html">Travel Insurance</a>
+        <a href="forex.html">Forex</a>
       </div>
       <div>
         <h3>Contact</h3>
-        <a href="tel:+919311354795" onclick="gtag('event','call_click',{event_category:'lead',event_label:'footer'});">+91 93113 54795</a>
+        <a href="tel:+919311354795">+91 93113 54795</a>
         <a href="mailto:info@goglobal.forex">info@goglobal.forex</a>
-        <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'footer'});" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div>
+        <h3>Address</h3>
         <p>18A, Block 8, Subhash Nagar, New Delhi - 110027</p>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2026 GoGlobal Travel Solutions Pvt. Ltd. All rights reserved. | Privacy Policy | Disclaimer</p>
+      <p>© 2026 GoGlobal Travel Solutions Pvt. Ltd. All rights reserved.</p>
     </div>
   </footer>
-
   <div class="sticky-mobile-cta">
-    <a href="tel:+919311354795" onclick="gtag('event','call_click',{event_category:'lead',event_label:'mobile_sticky'});">Call Now</a>
-    <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" onclick="gtag('event','whatsapp_click',{event_category:'lead',event_label:'mobile_sticky'});" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="tel:+919311354795">Call Now</a>
+    <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" target="_blank" rel="noopener">WhatsApp</a>
     <a href="international-packages.html">Packages</a>
   </div>
-
-  <script>
-    function attachAjaxForm(formId, messageId) {
-      const form = document.getElementById(formId);
-      const message = document.getElementById(messageId);
-      if (!form) return;
-
-      form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        message.textContent = 'Submitting...';
-
-        const formData = new FormData(form);
-        const honeypot = formData.get('website');
-
-        if (honeypot) {
-          message.textContent = 'Spam detected.';
-          return;
-        }
-
-        const phone = String(formData.get('phone') || '').trim();
-
-        if (!/^\d{10}$/.test(phone)) {
-          message.textContent = 'Please enter a valid 10-digit mobile number.';
-          return;
-        }
-
-        const payload = Object.fromEntries(formData.entries());
-        payload.timestamp = new Date().toISOString();
-        payload.referrer = document.referrer || '';
-        payload.user_agent = navigator.userAgent;
-
-        try {
-          const response = await fetch(form.action, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify(payload)
-          });
-
-          let result = {};
-          const rawText = await response.text();
-
-          try {
-            result = rawText ? JSON.parse(rawText) : {};
-          } catch (err) {
-            result = { message: rawText || 'Server did not return valid JSON.' };
-          }
-
-          if (response.ok && result.success) {
-            if (typeof gtag === 'function') {
-              gtag('event', 'form_submit', {
-                event_category: 'lead',
-                event_label: formId
-              });
-            }
-
-            message.textContent = 'Thank you. Your enquiry has been submitted.';
-            form.reset();
-            window.location.href = '/thank-you.html';
-          } else {
-            message.textContent = result.message || ('Submission failed. Server returned ' + response.status);
-          }
-        } catch (error) {
-          message.textContent = 'Unable to reach server. Please try again.';
-        }
-      });
-    }
-
-    attachAjaxForm('leadForm', 'formMessage');
-    attachAjaxForm('detailedLeadForm', 'detailedFormMessage');
-  </script>
 </body>
 </html>
+
