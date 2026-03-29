@@ -100,7 +100,7 @@
 <div class="hidden md:flex items-center gap-8 font-plus-jakarta text-sm font-medium tracking-tight">
 <a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="index.html">Home</a>
 <a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="services.html">Services</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="packages.html">Packages</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Packages</a>
 <a class="text-teal-700 dark:text-teal-300 border-b-2 border-teal-700 pb-1 font-plus-jakarta text-sm font-medium tracking-tight" href="contact.html">Contact Us</a>
 <a class="text-slate-600 dark:text-slate-400 hover:text-teal-600 transition-colors font-plus-jakarta text-sm font-medium tracking-tight" href="faq.html">FAQ</a>
 </div>
@@ -120,7 +120,7 @@
 <!-- Lead Generation Form -->
 <section class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-xl border border-outline-variant/15">
 <h2 class="font-headline text-2xl font-bold text-on-surface mb-8">Send a Trip Request</h2>
-<form id="leadForm"  class="space-y-6"><input type="hidden" name="source_page" value="contact-page">
+<form action="https://gogloballeadsapi-production.up.railway.app/lead" method="POST" class="space-y-6"><input type="hidden" name="source_page" value="contact-page">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
 <label class="text-sm font-semibold text-on-surface-variant ml-1">Full Name</label>
@@ -133,7 +133,7 @@
 </div>
 <div class="space-y-2">
 <label class="text-sm font-semibold text-on-surface-variant ml-1">Email Address</label>
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary transition-all text-on-surface placeholder:text-outline" placeholder="info@goglobal.forex" type="email"/>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary transition-all text-on-surface placeholder:text-outline" name="email" placeholder="info@goglobal.forex" type="email"/>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <div class="space-y-2">
@@ -152,9 +152,13 @@
 <div class="space-y-2">
 <label class="text-sm font-semibold text-on-surface-variant ml-1">Travel Dates</label>
 <div class="relative">
-<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary transition-all text-on-surface placeholder:text-outline" placeholder="Dec 2024 - Jan 2025" type="text"/>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary transition-all text-on-surface placeholder:text-outline" name="travel_date" placeholder="Dec 2024 - Jan 2025" type="text"/>
 <span class="material-symbols-outlined absolute right-4 top-4 text-outline">calendar_month</span>
 </div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1">Message</label>
+<textarea name="message" class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-2 focus:ring-secondary transition-all text-on-surface placeholder:text-outline" placeholder="Share your requirements"></textarea>
 </div>
 <div class="pt-4">
 <button class="w-full py-5 bg-gradient-to-br from-primary to-primary-container text-white font-bold rounded-lg shadow-xl hover:shadow-2xl hover:scale-[1.01] active:scale-[0.98] transition-all flex justify-center items-center gap-3 text-lg" type="submit">
@@ -213,8 +217,8 @@
 <span class="material-symbols-outlined">verified_user</span>
 </div>
 <div>
-<p class="font-bold text-on-tertiary-fixed">IATA Accredited</p>
-<p class="text-xs text-on-tertiary-fixed-variant">Trust your travels with certified global standards.</p>
+<p class="font-bold text-on-tertiary-fixed"></p>
+<p class="text-xs text-on-tertiary-fixed-variant"></p>
 </div>
 </div>
 </aside>
@@ -230,17 +234,17 @@
 <div>
 <h4 class="font-bold text-teal-800 mb-4 uppercase text-xs tracking-widest">Services</h4>
 <ul class="space-y-2 text-sm">
-<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="packages.html">Visa Services</a></li>
-<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="packages.html">Corporate Travel</a></li>
-<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="packages.html">Luxury Tours</a></li>
+<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Visa Services</a></li>
+<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Corporate Travel</a></li>
+<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Luxury Tours</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-bold text-teal-800 mb-4 uppercase text-xs tracking-widest">Destinations</h4>
 <ul class="space-y-2 text-sm">
-<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="packages.html">Europe</a></li>
-<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="packages.html">Southeast Asia</a></li>
-<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="packages.html">Middle East</a></li>
+<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Europe</a></li>
+<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Southeast Asia</a></li>
+<li><a class="text-slate-500 hover:text-teal-600 transition-colors" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Middle East</a></li>
 </ul>
 </div>
 <div>
@@ -255,29 +259,19 @@
 <div class="max-w-7xl mx-auto px-8 py-6 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-4">
 <p class="text-slate-500 text-sm font-inter">© 2024 GoGlobal Travel Solutions Private Limited. Delhi NCR Office. All rights reserved.</p>
 <div class="flex gap-6 text-sm text-slate-500">
-<a class="hover:text-teal-600" href="packages.html">Privacy Policy</a>
-<a class="hover:text-teal-600" href="packages.html">Sitemap</a>
+<a class="hover:text-teal-600" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Privacy Policy</a>
+<a class="hover:text-teal-600" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">Sitemap</a>
 </div>
 </div>
 </footer>
 <!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 group" href="packages.html">
+<a class="fixed bottom-8 right-8 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 active:scale-95 transition-all z-50 group" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details">
 <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">chat</span>
 <div class="absolute right-20 bg-white px-4 py-2 rounded-lg text-slate-800 text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
             Chat on WhatsApp
         </div>
 </a>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var form = document.getElementById('leadForm');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      window.location.href = 'thank-you.html';
-    });
-  }
-});
-</script>
+
 
 </body></html>
