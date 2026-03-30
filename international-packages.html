@@ -81,6 +81,57 @@ ul.clean li { padding:10px 0; border-bottom:1px solid var(--border); font-weight
   .sticky-mobile-cta { display:grid; }
   body { padding-bottom:62px; }
 }
+
+.floating-actions{
+  position:fixed; right:18px; bottom:88px; display:flex; flex-direction:column; gap:12px; z-index:1300;
+}
+.floating-actions a{
+  width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  color:#fff; font-weight:800; box-shadow:0 16px 35px rgba(0,0,0,0.18); font-size:22px;
+}
+.floating-whatsapp{ background:#25D366; }
+.floating-call{ background:var(--primary); }
+.floating-telegram{ background:#229ED9; }
+.hero-visual{
+  position:relative; min-height:420px; border-radius:28px; overflow:hidden; box-shadow:0 20px 50px rgba(13,59,102,.18);
+  background:#dbeafe;
+}
+.hero-visual img{
+  width:100%; height:100%; object-fit:cover; display:block;
+}
+.floating-card{
+  position:absolute; background:rgba(255,255,255,.92); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,.55);
+  box-shadow:0 14px 35px rgba(15,23,42,.14); border-radius:18px; padding:14px 16px; font-weight:700; color:#0d3b66;
+}
+.floating-card.small{ font-size:13px; }
+.floating-card.big{ font-size:15px; }
+.hero-visual .card-1{ top:18px; left:18px; }
+.hero-visual .card-2{ right:18px; top:28%; }
+.hero-visual .card-3{ left:22px; bottom:18px; }
+.showcase-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.showcase-card{ position:relative; min-height:360px; border-radius:24px; overflow:hidden; box-shadow:var(--shadow); }
+.showcase-card img{ width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
+.showcase-card:hover img{ transform:scale(1.05); }
+.showcase-overlay{
+  position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,20,40,0.05) 0%, rgba(10,20,40,.65) 100%);
+  display:flex; align-items:flex-end; padding:26px; color:#fff;
+}
+.showcase-overlay h3{ margin:0 0 8px; font-size:28px; }
+.showcase-overlay p{ margin:0 0 14px; color:rgba(255,255,255,.9); }
+.mini-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-top:12px; }
+.mini-tags span{
+  background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.25); padding:7px 10px; border-radius:999px; font-size:12px; font-weight:700;
+}
+.footer-contact{ margin-top:14px; color:#dbe4f0; }
+.footer-contact div{ margin:6px 0; }
+@media (max-width: 992px) {
+  .showcase-grid{ grid-template-columns:1fr; }
+}
+@media (max-width: 640px){
+  .floating-actions{ right:12px; bottom:74px; }
+  .floating-actions a{ width:50px; height:50px; font-size:19px; }
+}
+
 </style>
   
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BM4Z9ES4F3"></script>
@@ -168,6 +219,12 @@ document.addEventListener('DOMContentLoaded', function() {
       <h1>International Tour Packages</h1>
       <p>Choose your destination below and jump directly to the relevant package section with a working enquiry form.</p>
       <div class="grid-3" style="margin-top:24px;"><a class="card" style="text-align:center;font-weight:700;" href="#dubai">Dubai</a><a class="card" style="text-align:center;font-weight:700;" href="#thailand">Thailand</a><a class="card" style="text-align:center;font-weight:700;" href="#singapore">Singapore</a><a class="card" style="text-align:center;font-weight:700;" href="#bali">Bali</a><a class="card" style="text-align:center;font-weight:700;" href="#maldives">Maldives</a><a class="card" style="text-align:center;font-weight:700;" href="#europe">Europe</a></div>
+      <div class="showcase-grid" style="margin-top:28px;">
+        <article class="showcase-card"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80" alt="Dubai"><div class="showcase-overlay"><div><h3>Dubai</h3><p>Skylines, shopping and desert safari.</p><div class="mini-tags"><span>Luxury</span><span>Family</span></div></div></div></article>
+        <article class="showcase-card"><img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1400&q=80" alt="Bali"><div class="showcase-overlay"><div><h3>Bali</h3><p>Villas, beaches and honeymoon escapes.</p><div class="mini-tags"><span>Couples</span><span>Leisure</span></div></div></div></article>
+        <article class="showcase-card"><img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1400&q=80" alt="Singapore"><div class="showcase-overlay"><div><h3>Singapore</h3><p>City fun, attractions and family travel.</p><div class="mini-tags"><span>Family</span><span>Premium</span></div></div></div></article>
+      </div>
+
     </div>
   </section>
   
@@ -640,6 +697,12 @@ document.addEventListener('DOMContentLoaded', function() {
       <div>
         <h3>GoGlobal Travel Solutions Pvt. Ltd.</h3>
         <p>International travel support for packages, visa assistance, travel insurance, flights and forex.</p>
+<div class="footer-contact">
+  <div><strong>Phone:</strong> <a href="tel:+919311354795">+91 93113 54795</a></div>
+  <div><strong>Email:</strong> <a href="mailto:info@goglobal.forex">info@goglobal.forex</a></div>
+  <div><strong>Address:</strong> 18A, Block 8, Subhash Nagar, New Delhi - 110027</div>
+</div>
+
       </div>
       <div>
         <h3>Quick Links</h3>
@@ -669,6 +732,12 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" target="_blank" rel="noopener">WhatsApp</a>
     <a href="international-packages.html">Packages</a>
   </div>
+
+<div class="floating-actions">
+  <a class="floating-whatsapp" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+  <a class="floating-call" href="tel:+919311354795" aria-label="Call">☎</a>
+</div>
+
 </body>
 </html>
 
