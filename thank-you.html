@@ -141,62 +141,27 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-BM4Z9ES4F3');
 
-function trackAnalyticsEvent(eventName, params) {
-  if (typeof gtag !== 'function') return;
-  gtag('event', eventName, Object.assign({
-    page_location: window.location.href,
-    page_path: window.location.pathname
-  }, params || {}));
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('input[name="landing_page"]').forEach(function(input) {
-    input.value = window.location.pathname || '/';
-  });
-
-  document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-      trackAnalyticsEvent('whatsapp_click', {
-        event_category: 'contact',
-        event_label: link.getAttribute('href') || 'whatsapp_link',
-        link_url: link.href,
-        transport_type: 'beacon'
-      });
-    });
-  });
-
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
-    link.addEventListener('click', function() {
-      trackAnalyticsEvent('phone_click', {
-        event_category: 'contact',
-        event_label: link.getAttribute('href') || 'phone_link',
-        link_url: link.href,
-        transport_type: 'beacon'
-      });
-    });
-  });
-
   document.querySelectorAll('.leadForm').forEach((form) => {
     const formMessage = form.querySelector('.form-message');
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
-      if (formMessage) formMessage.textContent = 'Submitting...';
+      formMessage.textContent = 'Submitting...';
       const formData = new FormData(form);
       const honeypot = formData.get('website');
       if (honeypot) {
-        if (formMessage) formMessage.textContent = 'Spam detected.';
+        formMessage.textContent = 'Spam detected.';
         return;
       }
       const phone = String(formData.get('phone') || '').trim();
       if (!/^\d{10}$/.test(phone)) {
-        if (formMessage) formMessage.textContent = 'Please enter a valid 10-digit mobile number.';
+        formMessage.textContent = 'Please enter a valid 10-digit mobile number.';
         return;
       }
       const payload = Object.fromEntries(formData.entries());
       payload.timestamp = new Date().toISOString();
       payload.referrer = document.referrer || '';
       payload.user_agent = navigator.userAgent;
-      payload.landing_page = payload.landing_page || window.location.pathname || '/';
       try {
         const response = await fetch(form.action, {
           method: 'POST',
@@ -208,18 +173,16 @@ document.addEventListener('DOMContentLoaded', function() {
         try { result = rawText ? JSON.parse(rawText) : {}; }
         catch (err) { result = { message: rawText || 'Server did not return valid JSON.' }; }
         if (response.ok && result.success) {
-          trackAnalyticsEvent('form_submit', {
-            event_category: 'lead',
-            event_label: payload.service || payload.destination || 'site_form',
-            lead_source: payload.source || 'website_form'
-          });
+          if (typeof gtag === 'function') {
+            gtag('event', 'form_submit', { event_category: 'lead', event_label: payload.service || payload.destination || 'site_form' });
+          }
           form.reset();
           window.location.href = '/thank-you.html';
         } else {
-          if (formMessage) formMessage.textContent = result.message || ('Submission failed. Server returned ' + response.status);
+          formMessage.textContent = result.message || ('Submission failed. Server returned ' + response.status);
         }
       } catch (error) {
-        if (formMessage) formMessage.textContent = 'Unable to reach server. Please try again.';
+        formMessage.textContent = 'Unable to reach server. Please try again.';
       }
     });
   });
@@ -309,6 +272,23 @@ document.addEventListener('DOMContentLoaded', function() {
   <a class="floating-whatsapp" href="https://wa.me/919311354795?text=Hi%20I%20want%20travel%20details" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
   <a class="floating-call" href="tel:+919311354795" aria-label="Call">☎</a>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a[href*='wa.me']").forEach(function(el) {
+    el.addEventListener("click", function() {
+      console.log("WhatsApp click tracked");
+      if (typeof gtag === "function") {
+        gtag('event', 'whatsapp_click', {
+          event_category: 'engagement',
+          event_label: 'whatsapp_button',
+          link_url: this.href
+        });
+      }
+    });
+  });
+});
+</script>
 
 </body>
 </html>
